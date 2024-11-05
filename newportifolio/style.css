@@ -1,0 +1,220 @@
+/* style.css */
+
+body {
+    background-color: #FAFAFA; /* Um tom suave de branco */
+    font-size: 28px; /* Tamanho da fonte do corpo */
+    margin: 0; /* Remove a margem padrão */
+    font-family: "Days One", sans-serif; /* Fonte geral */
+}
+
+ul {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E0E0E0; /* Cinza muito claro */
+    position: sticky; /* Estilo fixo */
+    top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: flex-end; /* Itens de navegação à direita */
+}
+
+li {
+    float: left; /* Itens em linha */
+}
+
+li a {
+    display: block;
+    color: #333; /* Texto em cinza escuro */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #6200EA; /* Roxo ao passar o mouse */
+    background-color: transparent;
+}
+
+.active {
+    border-radius: 10%;
+    padding-bottom: auto;
+    background-color: #6200EA; /* Roxo */
+    color: white; /* Cor apenas no texto do item ativo */
+}
+
+.logo {
+    display: flex; /* Usando flexbox para alinhar a logo e o nome */
+    align-items: center; /* Centraliza verticalmente */
+    margin-right: auto; /* Empurra os itens do menu para a direita */
+}
+
+.logo-imagem {
+    width: 45px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 15%; /* Torna a imagem redonda */
+    margin-right: 10px; /* Espaçamento entre a logo e o nome */
+    margin-left: 10px;
+}
+
+.nome {
+    color: #333; /* Cor do texto do nome */
+    font-size: 17px; /* Ajusta o tamanho da fonte */
+    letter-spacing: -1.5px;
+}
+
+/* Header específico */
+.header {
+    display: flex; /* Usando flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaçamento entre itens */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #FAFAFA; /* Cor de fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding-top: 80px;
+    padding-bottom: 165px;
+}
+
+.imagem-esquerda {
+    width: 230px; /* Largura do círculo */
+    height: 230px; /* Altura do círculo, igual à largura */
+    border-radius: 50%; /* Faz a imagem ser um círculo */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre o espaço */
+}
+
+.imagem-direita {
+    width: 240px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-central {
+    flex: 1; /* Ocupa espaço restante */
+    text-align: center; /* Centraliza o texto */
+    max-width: 700px; /* Limita a largura do texto */
+    margin: 0 auto;
+}
+
+.texto-central h1 {
+    color: #6200EA; /* Roxo */
+    font-size: 50px;
+    letter-spacing: -3px;
+}
+
+.texto-central p {
+    color: #333333; /* Texto secundário em cinza escuro */
+    font-size: 22px;
+}
+
+.buttom-header {
+    padding-top: 50px;
+    font-size: 18px;
+    display: flex; /* Usando Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.buttom-header a {
+    display: inline-block; /* Para aplicar o efeito de hover */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #6200EA; /* Roxo */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.buttom-header a:hover {
+    background-color: #3700B3; /* Roxo mais escuro ao passar o mouse */
+}
+
+/* Seção Sobre Mim */
+.sobre-mim-conteudo {
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+.sobre-mim-conteudo h2 {
+    font-size: 36px;
+    color: #6200EA; /* Roxo */
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sobre-mim-conteudo p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.2; /* Espaçamento entre as linhas */
+    letter-spacing: -0.5px; /* Espaçamento entre letras, valor negativo para deixar mais junto */
+    margin: 0 auto; /* Centraliza o texto */
+    max-width: 800px; /* Limita a largura do texto */
+}
+
+/* Seção Habilidades */
+.habilidades-conteudo {
+    padding: 50px 20px;
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Usar flexbox para alinhar itens */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens na linha */
+    background-color: #F5F5F5; /* Fundo claro */
+}
+.habilidades-conteudo h2 {
+    color: #6200EA;
+}
+
+.habilidades-lista {
+    display: grid; /* Usando grid para organizar as habilidades */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre as habilidades */
+    padding: 20px; /* Adiciona padding ao redor da lista */
+    max-width: 900px;
+}
+
+.habilidade-item {
+    background-color: #FFFFFF; /* Cor de fundo para cada item */
+    padding: 20px; /* Espaçamento interno */
+    border-bottom: 4px solid #6200EA; /* Roxo para o contorno */
+    border-radius: 25px 0px 0 0; /* Arredondar os cantos do quadrado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s; /* Efeito de transição */
+    text-align: center; /* Centraliza o texto */
+    width: 80px; /* Largura fixa para o quadrado, ajuste conforme necessário */
+    height: 80px;
+}
+.habilidade-item p {
+    font-size: 16px; /* Tamanho da fonte para o nome da tecnologia */
+    color: #6200EA; /* Roxo para o texto */
+}
+
+.habilidade-item:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.habilidade-imagem {
+    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Para que a imagem ocupe uma nova linha */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Animação */
+.habilidades-conteudo {
+    text-align: center; /* Centraliza o texto */
+    padding: 50px; /* Espaçamento interno */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s; /* Efeito de transição para a opacidade */
+}
+
+.habilidades-conteudo.animate__animated {
+    opacity: 1; /* Fica visível quando a animação é aplicada */
+}
+
+.buttom-sobre-mim {
+    padding-top: 50px;
+    font-size: 18px;
+    display: flex; /* Usando Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-decoration: none;
+}

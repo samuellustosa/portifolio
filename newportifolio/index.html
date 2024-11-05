@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/sl02.ico" >
+    <title>SamuelLustosa - Portfólio</title>
+</head>
+<body>
+
+<ul>
+    <li class="logo">
+        <img src="images/SL02 (2).png" alt="Logo" class="logo-imagem">
+        <span class="nome">Samuel <span style="color: #6200EA;">Lustosa</span></span>
+    </li>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#sobre-mim">Sobre Mim</a></li>
+    <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#contact">Projetos</a></li>
+    <li><a href="#contact">Contato</a></li>
+</ul>
+
+<!-- Seção do Cabeçalho -->
+<section class="header">
+    <img src="images/servletrecuperafoto.gif" alt="Imagem Esquerda" class="imagem-esquerda">
+    <div class="texto-central">
+        <h1>Olá, eu sou <span style="color: black;">Samuel</span></h1>
+        <p>Admirador de tecnologia e desenvolvimento Front-End, 
+            busco criar experiências digitais elegantes e funcionais, 
+            com foco em usabilidade e design responsivo.</p>
+            <div class="buttom-header">
+                <a href="#sobre-mim" target="_blank">Ver Mais</a>
+            </div>       
+    </div>
+    <img src="images/computer01.png" alt="Imagem Direita" class="imagem-direita">
+</section>
+
+<!-- Seção Sobre Mim -->
+<section id="sobre-mim" class="sobre-mim-conteudo">
+    <h2>Sobre Mim</h2>
+    <p>
+        Sou formado em Técnico de Informática pelo Instituto Federal do Piauí - Campus Piripiri e 
+        atualmente estudo Ciência da Computação na Universidade Estadual do Piauí - Campus Piripiri.
+        Busco constantemente oportunidades de crescimento pessoal e profissional, participando de projetos extracurriculares e 
+        mantendo-me atualizado com as tendências da área e comprometido com meu desenvolvimento contínuo.
+    </p>
+    <div class="buttom-sobre-mim">
+        <a href="#sobre-mim" target="_blank">Dowload CV</a>
+    </div>  
+</section>
+
+<br><br>
+
+<!-- Seção Habilidades -->
+<section id="habilidades" class="habilidades-conteudo">
+    <h2>Habilidades</h2>
+    <div class="habilidades-lista">
+        <div class="habilidade-item">
+            <p>Python</p>
+            <img src="images/Python.png" class="habilidade-imagem">
+        </div>
+        <div class="habilidade-item">
+            <p>JavaScript</p>
+            <img src="images/JavaScript.png" class="habilidade-imagem">
+        </div>
+        <div class="habilidade-item">
+            <p>HTML</p>
+            <img src="images/html.jpg" class="habilidade-imagem">
+        </div>
+        <div class="habilidade-item">
+            <p>CSS</p>
+            <img src="images/CSS.png" class="habilidade-imagem">
+        </div>
+        <div class="habilidade-item">
+            <p>Python</p>
+            <img src="images/Python.png" class="habilidade-imagem">
+        </div>
+        <div class="habilidade-item">
+            <p>JavaScript</p>
+            <img src="images/JavaScript.png" class="habilidade-imagem">
+        </div>
+        <div class="habilidade-item">
+            <p>HTML</p>
+            <img src="images/html.jpg" class="habilidade-imagem">
+        </div>
+        <div class="habilidade-item">
+            <p>CSS</p>
+            <img src="images/CSS.png" class="habilidade-imagem">
+        </div>
+    </div>
+</section>
+
+<script>
+    // Efeito de deslizamento para a seção de habilidades
+    window.addEventListener('scroll', function() {
+        const habilidadesSection = document.querySelector('.habilidades-conteudo');
+        const sectionPosition = habilidadesSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (sectionPosition < screenPosition) {
+            habilidadesSection.classList.add('animate__animated', 'animate__slideInLeft');
+        } else {
+            habilidadesSection.classList.remove('animate__animated', 'animate__slideInLeft');
+        }
+    });
+</script>
+
+</body>
+</html>
